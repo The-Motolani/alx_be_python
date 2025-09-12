@@ -14,7 +14,7 @@ def get_valid_age(prompt):
         except ValueError:
             print("Invalid input. Please enter a numeric value for age.")
 # Get user's current age
-user_current_age = (get_valid_age("Enter your current age: "))
+user_current_age = (get_valid_age("How old are you? "))
 # Calculate future age in 2050
 user_future_age = user_current_age + 27
 # Display the result
