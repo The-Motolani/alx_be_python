@@ -26,6 +26,21 @@ By the end of this project, I am able to:
 - Uses `if/elif/else` statements to recommend clothing.  
 - Handles invalid input gracefully.  
 
+**Example:**
+
+```bash
+What's the weather like today? (sunny/rainy/cold): rainy
+Don't forget your umbrella and a raincoat.
+```
+
+---
+
+### 1. Simple Calculator with Match Case (`match_case_calculator.py`)
+
+- Asks the user for two numbers (`num1`, `num2`).  
+- Prompts for an operation (`+, -, *, /`).  
+- Uses a `match–case` statement to perform the correct calculation.  
+- Handles **division by zero** with an error message.  
 **Example:**  
 
 ``` bash
