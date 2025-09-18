@@ -29,10 +29,10 @@ By the end of this project, I am able to:
 **Example:**  
 
 ``` bash
-Enter the first number: 10 \
-Enter the second number: 0 \
-Choose the operation (+, -, *, /): / \
-Cannot divide by zero. \
+Enter the first number: 10
+Enter the second number: 0
+Choose the operation (+, -, *, /): /
+Cannot divide by zero.
 ```
 
 ---
@@ -46,10 +46,10 @@ Cannot divide by zero. \
 
 ```bash
 Enter a number to see its multiplication table: 5
-5 * 1 = 5 \
-5 * 2 = 10 \
-... \
-5 * 10 = 50 \
+5 * 1 = 5
+5 * 2 = 10
+...
+5 * 10 = 50
 ```
 
 ---
@@ -118,8 +118,6 @@ alx_be_python/
 
 - Python 3.10+ (for `match–case`)  
 - Basic knowledge of conditional statements and loops  
-
----
 
 ## How to Run  
 
