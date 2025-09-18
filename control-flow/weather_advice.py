@@ -1,4 +1,6 @@
+#ask users for weather details
 weather = input("What's the weather like today? (sunny/rainy/cold):")
+# give appropriate respone for inputted weather
 if weather.lower() == "sunny":
     print("Wear a t-shirt and sunglasses.")
 elif weather.lower() == "rainy":
