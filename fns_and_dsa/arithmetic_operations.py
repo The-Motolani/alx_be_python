@@ -14,6 +14,7 @@ def perform_operation(num1, num2, operation):
         try:
             return num1 / num2
         except ZeroDivisionError:
-            return "Cannot divide by zero."
+            if num2 == 0:
+                return "Cannot divide by zero."
     else:
         raise ValueError(f"Unsupported operation: {operation}")
