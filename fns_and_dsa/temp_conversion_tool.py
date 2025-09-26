@@ -1,14 +1,16 @@
-global fahrenheit_to_celsius, celsius_to_fahrenheit
-fahrenheit_to_celsius = (5/9)
-celsius_to_fahrenheit = (9/5)
+global FAHRENHEIT_TO_CELSIUS_FACTOR
+global CELSIUS_TO_FAHRENHEIT_FACTOR
+
+FAHRENHEIT_TO_CELSIUS_FACTOR = (5/9)
+CELSIUS_TO_FAHRENHEIT_FACTOR = (9/5)
 
 def convert_to_celsius(fahrenheit):
     """Convert Fahrenheit to Celsius."""
-    return (fahrenheit - 32) * fahrenheit_to_celsius
+    return (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
 def convert_to_fahrenheit(celsius):
     """Convert Celsius to Fahrenheit."""
-    return (celsius * celsius_to_fahrenheit) + 32
+    return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
 
 while True:
     try:
@@ -16,15 +18,19 @@ while True:
         break
     except ValueError:
         print("Invalid input. Please enter a numeric value.")
+
 while True:
     scale = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
+
     if scale == 'C':
         converted = convert_to_fahrenheit(temperature)
         print(f"{temperature}°C is {converted:.2f}°F")
         break
+
     elif scale == 'F':
         converted = convert_to_celsius(temperature)
         print(f"{temperature}°F is {converted:.2f}°C")
         break
+
     else:
         print("Invalid temperature. Please enter a numeric value.")
