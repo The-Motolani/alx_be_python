@@ -11,7 +11,7 @@ def convert_to_fahrenheit(celsius):
 
 while True:
     try:
-        to_be_converted = float(input("Enter the temperature to convert:  "))
+        to_be_converted = float(input("Enter the temperature to convert: "))
         break
     except ValueError:
         print("Invalid input. Please enter a numeric value.")
