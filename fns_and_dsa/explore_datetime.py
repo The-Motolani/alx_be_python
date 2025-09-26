@@ -6,13 +6,13 @@ def  display_current_datetime():
     print(formatted_date)
     while True:
         try:
-            future_date = int(input("Enter your number of days: "))
+            future_date = int(input("Enter the number of days to add to the current date:"))
             break
         except ValueError:
             print("Invalid input. Please enter an integer.")
     def calculate_future_date(future_date):
-         future = current_date + timedelta(days=future_date)
-         return future.strftime("%Y-%m-%d")
+         future_date = current_date + timedelta(days=future_date)
+         return future_date.strftime("%Y-%m-%d")
     print(f"Future date after {future_date} days is: {calculate_future_date(future_date)}")
     
 display_current_datetime()
