@@ -34,3 +34,6 @@ while True:
 
     else:
         print("Invalid temperature. Please enter a numeric value.")
+
+if __name__ == "__main__":
+    main()
