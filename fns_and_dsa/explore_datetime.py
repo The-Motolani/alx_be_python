@@ -2,7 +2,7 @@ import datetime
 from datetime import date
 
 def  display_current_datetime():
-    current_date = datetime.datetime.today()
+    current_date = datetime.datetime.now(tz=None)
     formatted_date = current_date.strftime("%Y-%m-%d %H:%M:%S")
     print(formatted_date)
     while True:
