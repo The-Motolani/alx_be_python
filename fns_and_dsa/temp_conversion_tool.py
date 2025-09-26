@@ -1,3 +1,4 @@
+global fahrenheit_to_celsius, celsius_to_fahrenheit
 fahrenheit_to_celsius = (5/9)
 celsius_to_fahrenheit = (9/5)
 
