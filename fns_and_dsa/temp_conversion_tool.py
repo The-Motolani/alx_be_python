@@ -2,7 +2,7 @@ global FAHRENHEIT_TO_CELSIUS_FACTOR
 global CELSIUS_TO_FAHRENHEIT_FACTOR
 
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
-CELSIUS_TO_FAHRENHEIT_FACTOR = (9/5)
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 def convert_to_celsius(fahrenheit):
     """Convert Fahrenheit to Celsius."""
@@ -17,7 +17,7 @@ while True:
         temperature = float(input("Enter the temperature to convert: "))
         break
     except ValueError:
-        print("Invalid input. Please enter a numeric value.")
+        print("Invalid temperature. Please enter a numeric value.")
 
 while True:
     scale = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
@@ -33,7 +33,7 @@ while True:
         break
 
     else:
-        print("Invalid temperature. Please enter a numeric value.")
+        print("Invalid input. Please specify if Celsuis or Fahrenheit (C/F).")
 
 if __name__ == "__main__":
     main()
